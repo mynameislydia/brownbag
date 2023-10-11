@@ -6,7 +6,7 @@ import numpy as np
 np.set_printoptions(suppress=True)
 
 # Load the model
-model = load_model("keras_Model.h5", compile=False)
+model = load_model("keras_Model.h5", compile=False) #이미 사자, 호랑이 이미지로 학습된 모델 file
 
 # Load the labels
 class_names = open("labels.txt", "r").readlines()
@@ -48,4 +48,4 @@ while True:
         break
 
 camera.release()
-cv2.destroyAllWindows()
+cv2.destroyAllWindows() #작업이 종료되면 모든 창을 닫기
